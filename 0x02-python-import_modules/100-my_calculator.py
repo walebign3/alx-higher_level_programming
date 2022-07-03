@@ -6,13 +6,13 @@ if __name__ == "__main__":
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     if sys.argv[2] == "+":
-        print("{} {} {} = {}".format(sys.argv[1],sys.argv[2],sys.argv[3], add(sys.argv[1],sys.argv[3])))
+        print("{} {} {} = {}".format(sys.argv[1],sys.argv[2],sys.argv[3], add(int(sys.argv[1]),int(sys.argv[3]))))
     elif sys.argv[2] == "-":
         print("{} {} {} = {}".format(sys.argv[1],sys.argv[2],sys.argv[3], sub(sys.argv[1],sys.argv[3])))
     elif sys.argv[2] == "*":
         print("{} {} {} = {}".format(sys.argv[1],sys.argv[2],sys.argv[3], mul(sys.argv[1],sys.argv[3])))
     elif sys.argv[2] == "/":
         print("{} {} {} = {}".format(sys.argv[1],sys.argv[2],sys.argv[3], div(sys.argv[1],sys.argv[3])))
-    elif sys.argv[2] != '+' or sys.argv[2] != '-' or sys.argv[2] != '*' or sys.argv[2] != '/':
+    else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
