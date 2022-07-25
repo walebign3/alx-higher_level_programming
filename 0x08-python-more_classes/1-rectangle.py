@@ -11,14 +11,14 @@ class Rectangle:
     def set_width (self, width):
         """ Class Rectangle """
         if (type(width) != int):
-            raise ValueError('width must be an integer')
+            raise TypeError('width must be an integer')
         if (width < 0):
             raise ValueError('width must be >= 0')
         self._width = width
     def set_height (self, height):
         """ Class Rectangle """
         if (type(height) != int):
-            raise ValueError('height must be an integer')
+            raise TypeError('height must be an integer')
         if (height < 0):
             raise ValueError('height must be >= 0')
         self._height = height
