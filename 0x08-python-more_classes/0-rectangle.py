@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Empty Class Square"""
+"""Empty Class Rectangle"""
 
 
 class Rectangle:
-"""Empty Class Square"""
+    """Empty Class Rectangle"""
     pass
