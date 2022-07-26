@@ -19,23 +19,20 @@ class Rectangle:
         return self._height
 
     @width.setter
-    def width(self, width):
+    def width(self, value):
         """ Class Rectangle """
-        if (type(width) != int):
+        if (type(value) != int):
             raise TypeError('width must be an integer')
-        if (width < 0):
+        if (value < 0):
             raise ValueError('width must be >= 0')
-        self._width = width
+        self._width = value
 
     @height.setter
-    def height(self, height):
+    def height(self, value):
         """ Class Rectangle """
-        if (type(height) != int):
+        if (type(value) != int):
             raise TypeError('height must be an integer')
-        if (height < 0):
+        if (value < 0):
             raise ValueError('height must be >= 0')
-        self._height = height
+        self._height = value
 
-"""    width = property(fget = get_width, fset = set_width)
-    height = property(fget = get_height, fset = set_height)
-"""
