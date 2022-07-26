@@ -8,7 +8,7 @@ class Rectangle:
         self.set_width(width)
         self.set_height(height)
 
-    def set_width (self, width):
+    def set_width(self, width):
         """ Class Rectangle """
         if (type(width) != int):
             raise TypeError('width must be an integer')
@@ -16,7 +16,7 @@ class Rectangle:
             raise ValueError('width must be >= 0')
         self._width = width
 
-    def set_height (self, height):
+    def set_height(self, height):
         """ Class Rectangle """
         if (type(height) != int):
             raise TypeError('height must be an integer')
