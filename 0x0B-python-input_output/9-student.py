@@ -1,12 +1,5 @@
 #!/usr/bin/python3
-"""
-a class Student that defines a student by:
-
-Public instance attributes:
-first_name
-last_name
-age
-"""
+"""a class Student that defines a student instance """
 
 
 class Student:
