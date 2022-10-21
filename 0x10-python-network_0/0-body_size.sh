@@ -1,3 +1,3 @@
 #!/bin/bash
 #Bash script that takes in a URL
-curl -sI 1$
+curl -sI "1$"
