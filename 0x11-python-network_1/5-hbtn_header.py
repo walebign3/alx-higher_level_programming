@@ -5,6 +5,5 @@ import sys
 
 
 if __name__ == "__main__":
-    url = 'https://alx-intranet.hbtn.io/status'
-    r = requests.get(url)
+    r = requests.get(sys.argv[1])
     print(r.headers.get("X-Request-id"))
