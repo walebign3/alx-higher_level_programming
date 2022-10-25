@@ -9,6 +9,7 @@ if __name__ == "__main__":
     try:
         if r.status_code > 400:
             print('Error code:', r.status_code)
-        else: print(r.content.decode("utf-8"))
+        else:
+            print(r.content.decode("utf-8"))
     except KeyError:
         pass
